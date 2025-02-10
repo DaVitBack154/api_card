@@ -1,11 +1,23 @@
 const mongoose = require('mongoose');
 const CreateCardUserSchema = mongoose.Schema(
   {
-    name_img_user: String,
-    namefile: String,
-    name_user: String,
+    fname: String,
+    tname: String,
+    position: String,
+    phone: String,
+    phone_off: String,
+    email: String,
+    password: String,
+    role: String,
+    image_mem: String,
+    status: String,
+    theme_card: String,
+    images: String,
+    name_person: String,
+    name_com: String,
+    support: String,
   },
   { timestamps: true }
 );
 
-module.exports = mongoose.model('create_Carduser', CreateCardUserSchema);
+module.exports = mongoose.model('create_carduser', CreateCardUserSchema);
